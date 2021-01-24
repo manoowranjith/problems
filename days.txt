@@ -1,0 +1,16 @@
+#Finding no of Days from given date to till now
+
+from datetime import date
+
+print("Enter date in YYYY/MM/DD")
+print("Eg:2021/01/21")
+
+past_date=list(map(int,input().split("/")))
+
+now = date.today()
+
+past=date(past_date[0],past_date[1],past_date[2])
+
+print("No.of.Days:", now-past)
+
+

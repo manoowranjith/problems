@@ -1,0 +1,21 @@
+#Seperating data types
+
+input_list=["test", "name", 45, "anything", True, 78]
+
+
+strings=[]
+numbers=[]
+booleans=[]
+
+
+for i in input_list:
+    if(type(i) is str):
+        strings.append(i)
+    if(type(i) is int):
+        numbers.append(i)
+    if(type(i) is bool):
+        booleans.append(i)
+
+my_dict = {"strings:":strings,"numbers":numbers,"booleans":booleans};
+
+print(my_dict)

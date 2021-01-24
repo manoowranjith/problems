@@ -1,0 +1,18 @@
+#Encrytion
+
+item=list(map(list,input().split(" ")))
+string=""
+count=0
+for i in item:
+    print(i)
+    for j in range(len(i)):
+        if(j==0):
+            string=string+str(i[j])
+        else:
+           string=string+"#"+str(ord(i[j])-96)
+    if(count==0):
+        string=string+"_"
+        count=count+1
+string=string+"!"   
+print(string)
+
